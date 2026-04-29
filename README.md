@@ -1,29 +1,71 @@
 # fraud-detection-project
-SQL, Python and Excel based fraud detection analysis
-# Fraud Detection Project
+Project Overview
 
-## Overview
-This project analyzes transaction data to identify fraud patterns using Python, SQL, and Excel.
+This project focuses on detecting fraudulent transactions using data analysis techniques.
+The goal is to identify suspicious patterns in banking transactions such as:
 
-## Tools Used
-- Python (Pandas)
-- MySQL
-- Excel (Dashboard)
+Unusual transaction amounts
+Multiple login attempts
+High-risk locations or devices
+Repeated abnormal behavior
 
-## Key Features
-- Data cleaning and preprocessing
-- Fraud detection using SQL queries
-- Interactive Excel dashboard
-- Analysis by channel, location, and age group
+The project uses Python, SQL, and Excel to clean, analyze, and visualize data.
+Tools & Technologies
+🐍 Python (Pandas, NumPy)
+🗄️ MySQL (SQL queries for analysis)
+📊 Excel (Interactive Dashboard)
+📁 CSV Dataset
 
-## Insights
-- Identified high-risk channels
-- Detected suspicious login behavior
-- Analyzed fraud distribution across customer segments
+The dataset includes:
+
+Transaction ID
+Account ID
+Transaction Amount
+Transaction Date
+Transaction Type (Debit/Credit)
+Location
+Device ID
+IP Address
+Merchant ID
+Channel (Online/Offline)
+Customer Age
+Login Attempts
+Account Balance
+
+Before analysis, the dataset was cleaned by Using Python (Pandas):
+Removing duplicate records
+Handling missing values
+Converting date formats
+Standardizing column names
+Fixing incorrect data types
+
+Fraud was identified using rule-based patterns such as:
+🚨 High-value transactions compared to normal behavior
+🚨 Multiple failed login attempts
+🚨 Transactions from unusual locations
+🚨 Same device/IP used for multiple accounts
+🚨 Frequent transactions in a short time period
+
+Key SQL operations used:
+JOIN operations between tables
+GROUP BY analysis for customer behavior
+Window functions for ranking transactions
+Filtering high-risk transactions
+Aggregation for fraud pattern detection
+
+An interactive Excel dashboard created to visualize:
+
+Total vs Fraud transactions
+Fraud distribution by location
+Fraud by age group
+Channel-wise fraud trends
+Customer risk segmentation
+
+
 
 ## Dashboard
 <img width="1600" height="643" alt="image" src="https://github.com/user-attachments/assets/fb9b0b82-6c7e-45e7-92ce-73a1bbabb280" />
 
 
 ## Author
-Navin
+Navin Kumar Soren 
